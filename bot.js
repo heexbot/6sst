@@ -8,7 +8,7 @@ const client = new Discord.Client();
 
 client.on("message", message => {
 
-            if (message.content.startsWith(prefix + "bc")) {
+            if (message.content.startsWith("+bc")) {
         if(message.channel.type === 'dm') return message.reply('This Command Is Only For Server!');
                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
@@ -26,7 +26,7 @@ client.on("message", message => {
 
 
   client.on('message', async message => {
-  if(message.content.startsWith(prefix + "bcall")) {
+  if(message.content.startsWith("+bcall")) {
     let i = client.users.size;
     if(message.author.id !== '323888904602124299') return message.channel.send('❎ » هذا الأمر مخصص لصاحب البوت فقط');
     var args = message.content.split(' ').slice(1).join(' ');
@@ -40,11 +40,7 @@ client.on("message", message => {
   }
 });
 
-__
-كود برودكاست مدموج مع كود bcall
-من صنعي طبعا
-@here l @everyone 
-        
+    
         
 
 
@@ -54,9 +50,9 @@ __
 
 var prefix = "w";
 
-var adminprefix = "Wb";
+var adminprefix = "+";
 
-const developers = ["323888904602124299","379212980946075648"]
+const developers = ["323888904602124299","331372785068802049"]
 
 client.on('message', message => {
 
